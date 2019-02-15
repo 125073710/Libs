@@ -1,4 +1,4 @@
-package com.ybf.utileslib.Receiver;
+package com.ybf.utileslib.receiver;
 
 /**
  * Created by ybf on 2019/1/21.

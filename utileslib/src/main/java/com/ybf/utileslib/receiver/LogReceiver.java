@@ -1,4 +1,4 @@
-package com.ybf.utileslib.Receiver;
+package com.ybf.utileslib.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Log;
 
-import com.ybf.utileslib.LogUtile;
+import com.ybf.utileslib.utils.LogUtile;
 
 /**
  * Created by ybf on 2019/1/21.
@@ -33,7 +33,10 @@ public class LogReceiver extends BroadcastReceiver implements Action {
         }
     }
 
-
+    /**
+     * 注册广播
+     * @param mContext
+     */
     public static void regerstBroadcast(Context mContext) {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(IS_DEBUG);

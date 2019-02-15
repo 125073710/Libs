@@ -1,4 +1,4 @@
-package com.ybf.utileslib.RegerstPermission;
+package com.ybf.utileslib.regerstPermission;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -50,16 +50,18 @@ import java.util.List;
 		if(need) {
 			// TODO: 2017/7/28  在此声明所需 动态添加 权限
 			//单个权限
-			addPermission(Manifest.permission.READ_EXTERNAL_STORAGE);
-			addPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+		/*	addPermission(Manifest.permission.READ_EXTERNAL_STORAGE);
+			addPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);*/
 			// 多组权限
-	/*		addPermissions(
-					Manifest.permission.READ_PHONE_STATE,
-					Manifest.permission.BLUETOOTH_ADMIN,
-					Manifest.permission.ACCESS_WIFI_STATE,
-					Manifest.permission.CHANGE_WIFI_STATE,
-					Manifest.permission.BLUETOOTH
-			);*/
+			addPermissions(
+//					Manifest.permission.READ_PHONE_STATE,
+//					Manifest.permission.BLUETOOTH_ADMIN,
+//					Manifest.permission.ACCESS_WIFI_STATE,
+//					Manifest.permission.CHANGE_WIFI_STATE,
+//					Manifest.permission.BLUETOOTH,
+					Manifest.permission.READ_EXTERNAL_STORAGE,
+					Manifest.permission.WRITE_EXTERNAL_STORAGE
+			);
 
 		}
 	}

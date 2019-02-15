@@ -1,4 +1,4 @@
-package com.ybf.utileslib.RegerstPermission;
+package com.ybf.utileslib.regerstPermission;
 /**
  * 项目名称: GooglePlay
  * 创建人: Eshel

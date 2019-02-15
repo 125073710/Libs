@@ -1,4 +1,4 @@
-package com.ybf.utileslib.RegerstPermission;
+package com.ybf.utileslib.regerstPermission;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;

@@ -1,4 +1,4 @@
-package com.ybf.utileslib;
+package com.ybf.utileslib.utils;
 
 import android.util.Log;
 
@@ -7,7 +7,7 @@ import android.util.Log;
  * Log工具类
  */
 public class LogUtile  {
-    public static Boolean DEBUG = false;
+    public static Boolean DEBUG = true;
 
     public static void i(String TAG, String msg) {
         if (DEBUG) {
@@ -39,6 +39,20 @@ public class LogUtile  {
         }
     }
 
-
+    /**
+     * 根据tag打印相关v信息
+     * @param tag
+     * @param msg
+     */
+    public static void V(String tag,String msg)
+    {
+        if(DEBUG){
+            StackTraceElement ste = new Throwable().getStackTrace()[1];
+            String traceInfo = ste.getClassName() + "::";
+            traceInfo += ste.getMethodName();
+            traceInfo += "@" + ste.getLineNumber() + ">>";
+            android.util.Log.v(tag, traceInfo+msg);
+        }
+    }
 
 }

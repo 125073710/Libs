@@ -1,4 +1,4 @@
-package com.ybf.utileslib;
+package com.ybf.utileslib.utils;
 
 /**
  * Created by ybf on 2019/1/21.
